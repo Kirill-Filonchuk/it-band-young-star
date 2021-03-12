@@ -21,4 +21,16 @@
   border-radius: 2px;
 }
 
+.header .container {
+  width: 100vw;
+  height: 50px;
+  background-color: #FFB8CA;
+}
+
+.hero .container {
+  width: 100vw;
+  height: 502px;
+  background-color: #b8ffb8;
+}
+
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
