@@ -11,8 +11,18 @@
 @import './base/container';
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+
 @import './components/header';
 @import './components/mobile-menu';
 @import './components/hero';
+@import './components/products';
+
+
+@import './about';
+@import './advantages';
 @import "./components/footer";
+
+// моя ветка
+
+@import './components/contacts';
