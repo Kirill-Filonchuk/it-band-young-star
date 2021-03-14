@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\product\\mob1.png":[["mob1.adf5b134.png","images/product/mob1.png"],"images/product/mob1.png"],"./..\\images\\product\\mob2.png":[["mob2.353088a3.png","images/product/mob2.png"],"images/product/mob2.png"],"./..\\images\\product\\mob3.png":[["mob3.5f9c3c08.png","images/product/mob3.png"],"images/product/mob3.png"],"./..\\images\\advantages\\icon1.png":[["icon1.7ef6014f.png","images/advantages/icon1.png"],"images/advantages/icon1.png"],"./..\\images\\reviews\\reviews-quotes.svg":[["reviews-quotes.fcc0bf83.svg","images/reviews/reviews-quotes.svg"],"images/reviews/reviews-quotes.svg"],"./..\\images\\reviews\\reviews-group.svg":[["reviews-group.7af967db.svg","images/reviews/reviews-group.svg"],"images/reviews/reviews-group.svg"],"./..\\images\\reviews\\dots-icon.svg":[["dots-icon.bdfef8f0.svg","images/reviews/dots-icon.svg"],"images/reviews/dots-icon.svg"],"./..\\images\\icon\\Vector.svg":[["Vector.76acf997.svg","images/icon/Vector.svg"],"images/icon/Vector.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55901" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64944" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
