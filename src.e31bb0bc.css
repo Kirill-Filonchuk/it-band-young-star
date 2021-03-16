@@ -629,6 +629,12 @@ button {
   z-index: 3;
 }
 
+@media screen and (max-width: 767px) {
+  .coutn-wraper {
+    display: none;
+  }
+}
+
 .first-count {
   display: flex;
   justify-content: flex-end;
@@ -1005,9 +1011,9 @@ button {
   background-image: url(/m-milk.df76b223.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position-y: bottom, 61px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-section {
     padding-top: 130px;
   }
@@ -1028,12 +1034,12 @@ button {
     background-image: none;
   }
 }
-@media screen and (min-width: 773px) {
+@media screen and (min-width: 769px) {
   .about-section {
     background-image: url(/d-milk.52dcd1d1.png);
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 773px), screen and (min-resolution: 192dpi) and (min-width: 773px), screen and (min-resolution: 2dppx) and (min-width: 773px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px), screen and (min-resolution: 192dpi) and (min-width: 769px), screen and (min-resolution: 2dppx) and (min-width: 769px) {
   .about-section {
     background-image: url(/d-milk@2x.038b17c7.png);
   }
@@ -1049,7 +1055,7 @@ button {
   display: block;
   margin-bottom: 15px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-label {
     font-size: 26px;
     line-height: 30px;
@@ -1073,7 +1079,7 @@ button {
   margin-bottom: 26px;
   margin-top: 0;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-title {
     font-weight: 400;
     font-size: 48px;
@@ -1090,7 +1096,7 @@ button {
   }
 }
 
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-for-flex {
     display: flex;
   }
@@ -1101,7 +1107,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-picture-cow {
     margin-bottom: 0;
     min-width: 340px;
@@ -1114,7 +1120,7 @@ button {
   }
 }
 
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-flextext {
     margin-left: 17px;
   }
@@ -1133,7 +1139,7 @@ button {
   padding-left: 30px;
   padding-right: 30px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-text {
     padding-left: 0;
     padding-right: 0;
@@ -1153,7 +1159,7 @@ button {
   color: var(--primary-text-color);
   margin-bottom: 33px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-text.first {
     margin-bottom: 30px;
   }
@@ -1167,7 +1173,7 @@ button {
   color: var(--secondary-text-color);
   margin-bottom: 17px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-text.second {
     margin-bottom: 62px;
   }
@@ -1198,18 +1204,19 @@ button {
 .about-button:hover, .about-button:focus {
   background-color: var(--dark-accent-color);
   color: var(--button-color);
+}
+.about-button:hover > .about-button-icon, .about-button:focus > .about-button-icon {
   fill: var(--button-color);
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .about-button {
     margin-left: 0;
   }
 }
 
 .about-button-icon {
-  fill: currentColor;
   margin-left: 14px;
-  transition: all var(--time) var(--delay);
+  fill: currentColor;
 }
 
 .advantages-section {
@@ -1217,7 +1224,7 @@ button {
   padding-top: 39px;
   padding-bottom: 97px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-section {
     padding-bottom: 140px;
     padding-top: 66px;
@@ -1230,7 +1237,7 @@ button {
   }
 }
 
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-list {
     display: flex;
   }
@@ -1244,7 +1251,7 @@ button {
 .advantages-list-item:first-child {
   margin-top: 0;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item {
     margin-top: 0;
     margin-right: 60px;
@@ -1272,12 +1279,12 @@ button {
   background-color: var(--primary-bcg-color);
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item::before {
     margin-bottom: 36px;
   }
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item::before {
     margin-bottom: 40px;
   }
@@ -1302,7 +1309,7 @@ button {
   margin-top: 0;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-item-title {
     font-weight: 400;
     font-size: 48px;
@@ -1326,7 +1333,7 @@ button {
   color: var(--primary-text-color);
   margin: 0;
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .advantages-item-text {
     font-weight: 700;
     font-size: 14px;
@@ -1509,7 +1516,7 @@ button {
     margin-top: 35px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .rewiew {
     padding: 123px 63px 132px 63px;
   }
