@@ -117,18 +117,38 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/mobile-menu.js":[function(require,module,exports) {
-(function () {
-  var menuBtnRef = document.querySelector("[data-menu-button]");
-  var mobileMenuRef = document.querySelector("[data-menu]");
-  var mobileBtnClose = document.querySelector("[data-menu-close]");
-  menuBtnRef.addEventListener("click", function () {
-    mobileMenuRef.classList.toggle("is-open");
-  });
-  mobileBtnClose.addEventListener('click', function () {
-    mobileMenuRef.classList.toggle("is-open");
-  });
-})();
+})({"js/scrollup.js":[function(require,module,exports) {
+window.onload = function () {
+  // после загрузки страницы
+  var scrollUp = document.getElementById('scrollup'); // найти элемент
+
+  scrollUp.onmouseover = function () {
+    // добавить прозрачность
+    scrollUp.style.opacity = 0.3;
+    scrollUp.style.filter = 'alpha(opacity=30)';
+  };
+
+  scrollUp.onmouseout = function () {
+    //убрать прозрачность
+    scrollUp.style.opacity = 0.5;
+    scrollUp.style.filter = 'alpha(opacity=40)';
+  };
+
+  scrollUp.onclick = function () {
+    //обработка клика
+    window.scrollTo(0, 0);
+  }; // show button
+
+
+  window.onscroll = function () {
+    // при скролле показывать и прятать блок
+    if (window.pageYOffset > 0) {
+      scrollUp.style.display = 'block';
+    } else {
+      scrollUp.style.display = 'none';
+    }
+  };
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -333,5 +353,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/mobile-menu.js"], null)
-//# sourceMappingURL=/mobile-menu.02d75e0a.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/scrollup.js"], null)
+//# sourceMappingURL=/scrollup.2415c5b3.js.map

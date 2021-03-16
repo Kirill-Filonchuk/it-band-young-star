@@ -294,6 +294,20 @@ button {
     background-color: var(--button-color-bn);
   }
 }
+#scrollup {
+  position: fixed;
+  opacity: 0.8;
+  padding: 1px 1px 1px;
+  background: var(--secondary-text-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  left: 15px;
+  bottom: 15px;
+  display: none;
+  cursor: pointer;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -360,7 +374,7 @@ button {
     padding-top: 37px;
     padding-bottom: 0;
     padding-left: 46px;
-    padding-right: 115px;
+    padding-right: 110px;
   }
 
   .burger__btn {
@@ -518,6 +532,7 @@ button {
 @media screen and (min-width: 1280px) {
   .hero__content {
     margin-bottom: 25px;
+    padding-top: 22px;
   }
 }
 
@@ -605,19 +620,24 @@ button {
 }
 @media screen and (min-width: 768px) {
   .girl-wraper {
-    right: 2%;
+    right: 4%;
   }
 }
 @media screen and (min-width: 1280px) {
   .girl-wraper {
-    right: 6%;
+    right: 3%;
   }
 }
 
 .milk-wraper {
   position: absolute;
   bottom: 8%;
-  left: 3%;
+  left: 5%;
+}
+@media screen and (min-width: 1280px) {
+  .milk-wraper {
+    left: 0%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -632,8 +652,8 @@ button {
 }
 @media screen and (min-width: 1280px) {
   .container_hero {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 36px;
+    padding-right: 0;
     padding-top: 83px;
     max-width: 1120px;
     height: 665px;
@@ -646,12 +666,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero__wraper {
-    padding-top: 15px;
+    padding-top: 11px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__wraper {
-    padding-top: 84px;
+    padding-top: 74px;
   }
 }
 
@@ -661,6 +681,9 @@ button {
   z-index: 3;
 }
 
+.coutn-wraper {
+  padding-right: 10px;
+}
 @media screen and (max-width: 767px) {
   .coutn-wraper {
     display: none;
