@@ -232,6 +232,13 @@ button {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 24px;
+  text-decoration: none;
+  color: inherit;
   text-align: center;
 }
 @media screen and (min-width: 1280px) {
@@ -239,6 +246,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.286;
+    height: 40px;
   }
 }
 
@@ -271,6 +279,13 @@ button {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 24px;
+  text-decoration: none;
+  color: inherit;
   text-align: center;
 }
 @media screen and (min-width: 1280px) {
@@ -278,6 +293,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.286;
+    height: 40px;
   }
 }
 
@@ -395,6 +411,10 @@ button {
     font-size: 16px;
     line-height: 1.313;
     color: var(--button-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav__link:hover, .site-nav__link:focus {
+    color: var(--dark-accent-color);
   }
 }
 .mobile__menu {
@@ -495,11 +515,21 @@ button {
   background-size: 346px 344px;
   background-position: calc(100vw / 2 - 129px) 83px;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/ellipse-mobile-pic-full@2x.a6ded532.png");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("/ellipse-tablet-pic.91cb7eed.png");
     background-size: 324px 322px;
     background-position: calc(100vw / 2 - 78px) 31px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/ellipse-tablet-pic@2x.b11f2207.png");
   }
 }
 @media screen and (min-width: 1280px) {
@@ -509,7 +539,28 @@ button {
     background-position: calc(100vw / 2 - 170px) 52px;
   }
 }
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/ellipse-desktop-pic@2x.06639d85.png");
+  }
+}
 
+.hero:hover {
+  animation-name: zoom;
+  animation-duration: 3000ms;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 .container_hero {
   padding-right: 0;
   padding-left: 20px;
@@ -1702,14 +1753,6 @@ button {
     margin-bottom: 15px;
   }
 }
-.links {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
 .container_cont {
   width: 280px;
   padding-left: 20px;
@@ -1731,7 +1774,6 @@ button {
   }
 }
 
-/* Накидую стили  */
 .contacts {
   background: #fff5f6;
   background-repeat: no-repeat;
@@ -1753,6 +1795,7 @@ button {
   }
 }
 
+/* Карты Городов */
 @media screen and (min-width: 768px) {
   .wrapper-city {
     display: flex;
@@ -1812,21 +1855,22 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
-  margin-bottom: 25px;
+  line-height: 1.834;
   display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   background: #f0d1a5;
   border-radius: 4px;
+  margin-bottom: 25px;
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .contacts-list-item-name {
     width: 73px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 186%;
+    line-height: 1.875;
     margin-bottom: 30px;
   }
 }
@@ -1838,13 +1882,12 @@ button {
 }
 
 .contacts-list-item-titel {
-  /* width: 57px; */
   height: 22px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.834;
   margin-bottom: 10px;
   letter-spacing: 0.04em;
   color: #000000;
@@ -1852,16 +1895,18 @@ button {
 @media screen and (min-width: 768px) {
   .contacts-list-item-titel {
     height: 26px;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 186%;
+    line-height: 1.858;
     margin-bottom: 14px;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts-list-item-titel {
     height: 30px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 186%;
+    line-height: 1.875;
     margin-bottom: 10px;
   }
 }
@@ -1872,23 +1917,23 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
 }
 @media screen and (min-width: 768px) {
   .contacts-list-item-text {
     width: 145px;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 166%;
-    /* or 23px */
+    line-height: 1.643;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts-list-item-text {
     width: 243px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 183%;
-    /* or 29px */
+    line-height: 1.813;
   }
 }
 
@@ -1923,22 +1968,23 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.834;
   color: #000000;
 }
 @media screen and (min-width: 768px) {
   .contacts-list-item-week {
     height: 26px;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 186%;
-    /* identical to box height, or 26px */
+    line-height: 1.858;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts-list-item-week {
     height: 30px;
+    font-weight: 500;
     font-size: 16px;
-    /* identical to box height, or 30px */
+    line-height: 1.875;
     letter-spacing: 0.04em;
   }
 }
@@ -1950,20 +1996,23 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.834;
   color: #ffa5ba;
 }
 @media screen and (min-width: 768px) {
   .contacts-list-item-time {
     height: 23px;
+    font-weight: 500;
     font-size: 14px;
-    /* or 26px */
+    line-height: 1.858;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts-list-item-time {
     height: 30px;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 1.875;
     letter-spacing: 0.04em;
   }
 }
@@ -1989,7 +2038,7 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: #907e82;
   transition: color 250ms linear;
 }
@@ -2001,12 +2050,11 @@ button {
 
 .foodtruck {
   width: 130px;
-  /* height: 16px; */
   background: #c2e297;
   border-radius: 4px;
 }
 
-/* Кнопки  */
+/*=== Кнопки ===*/
 .locations {
   display: flex;
   align-items: center;
@@ -2014,15 +2062,16 @@ button {
   justify-content: center;
 }
 
+/* 1- кнопка */
 .contacts-btn {
   min-width: 161px;
   height: 44px;
   padding: 12px 20px;
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.313;
   border: 0;
   cursor: pointer;
   margin-bottom: 10px;
@@ -2063,15 +2112,16 @@ button {
   background-image: url("/Vector.76acf997.svg");
 }
 
+/* 2- кнопка */
 .franchise {
   min-width: 161px;
   height: 44px;
   padding: 0px 32px;
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.313;
   border: 0;
   cursor: pointer;
   margin-bottom: 10px;
@@ -2098,9 +2148,8 @@ button {
   margin-left: 10px;
   color: inherit;
   background-color: inherit;
-  /* border: 2px solid #ffffff; */
-  background-image: url("/cont-vector.4e7b06ad.svg");
   background-size: contain;
+  background-image: url("/cont-vector.4e7b06ad.svg");
 }
 
 .franchise:hover::after,
