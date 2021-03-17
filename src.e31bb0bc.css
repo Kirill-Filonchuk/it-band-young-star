@@ -318,7 +318,7 @@ button {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  left: 15px;
+  left: 5px;
   bottom: 15px;
   display: none;
   cursor: pointer;
@@ -455,8 +455,8 @@ button {
 }
 .mobile__close__btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 23px;
+  right: 34px;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -469,8 +469,8 @@ button {
 }
 
 .menu__close__btn__icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -510,6 +510,7 @@ button {
 .hero {
   background-color: var(--hero-bcg-color);
   z-index: -1;
+  overflow: hidden;
   background-image: url("/ellipse-mobile-pic-full.42baa6cb.png");
   background-repeat: no-repeat;
   background-size: 346px 344px;
@@ -545,7 +546,9 @@ button {
   }
 }
 
-.hero:hover {
+.first-count:hover,
+.second-count:hover,
+.milk-wraper:hover {
   animation-name: zoom;
   animation-duration: 3000ms;
 }
@@ -1779,19 +1782,19 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background: linear-gradient(180deg, white 6%, #fff5f6 6%);
+  background: linear-gradient(180deg, white 6%, #fff5f6 6%), no-repeat;
   padding-bottom: 113px;
 }
 @media screen and (min-width: 768px) {
   .contacts {
     padding-bottom: 158px;
-    background: linear-gradient(180deg, white 10%, #fff5f6 10%);
+    background: linear-gradient(180deg, white 10%, #fff5f6 10%), no-repeat;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
     padding-bottom: 165px;
-    background: url("/bg.e79a717b.png"), center, linear-gradient(180deg, white 12%, #fff5f6 12%);
+    background: url("/bg.e79a717b.png"), no-repeat, center, linear-gradient(180deg, white 12%, #fff5f6 12%);
   }
 }
 
@@ -2196,12 +2199,14 @@ button {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 46px;
-  margin-right: -28px;
 }
 
 .footer-item {
   display: flex;
   text-decoration: none;
+}
+.footer-item:not(:last-child) {
+  margin-right: 28px;
 }
 
 footer .link {
@@ -2218,7 +2223,6 @@ footer .link {
   text-align: center;
   border-radius: 50%;
   background-color: #FEA5BB;
-  margin-right: 28px;
 }
 
 .footer-link:hover,
@@ -2254,7 +2258,7 @@ footer .link {
 .footer-contact {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 43px;
+  padding-bottom: 43px;
 }
 
 .footer-tel-text {
@@ -2279,14 +2283,32 @@ footer .link {
 
 .footer-company {
   width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   border-top: 1px solid #E1E1E1;
+  background-color: #FFF5F6;
+  height: 90px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .footer-company {
+    height: 73px;
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-company {
+    height: 45px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
 }
 
 .footer-company-text {
   width: 145px;
-  margin-top: 22px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -2294,7 +2316,6 @@ footer .link {
   line-height: 1.5;
   text-align: center;
   color: #907E82;
-  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 480px) {
@@ -2307,7 +2328,6 @@ footer .link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 18px;
   }
 
   .footer-descr {
