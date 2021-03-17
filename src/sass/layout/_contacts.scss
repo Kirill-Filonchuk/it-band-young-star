@@ -1,23 +1,21 @@
-
 .container_cont {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 
-    @media screen and(min-width: 768px) {
-      width: 700px;
-      padding-left: 36px;
-      padding-right: 36px;
-    }
+  @media screen and(min-width: 768px) {
+    width: 700px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 
-    @media screen and(min-width: 1280px) {
-      width: 1050px;
-      padding-left: 115px;
-      padding-right: 115px;
-    }
+  @media screen and(min-width: 1280px) {
+    width: 1050px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
-
 
 .contacts {
   background: #fff5f6;
@@ -25,21 +23,34 @@
   background-size: contain;
   background-position: center;
 
-
-  background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(255,245,246,1) 6%), no-repeat;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 6%,
+      rgba(255, 245, 246, 1) 6%
+    ),
+    no-repeat;
   padding-bottom: 113px;
-  
+
   @media screen and(min-width: 768px) {
     padding-bottom: 158px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,245,246,1) 10%), no-repeat;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 10%,
+        rgba(255, 245, 246, 1) 10%
+      ),
+      no-repeat;
   }
 
   @media screen and(min-width: 1280px) {
     padding-bottom: 165px;
-    background: url('../images/bg.png'), no-repeat, center, linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(255,245,246,1) 12%);
-    }
+    background: url('../images/bg.png'), no-repeat, center,
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 12%,
+        rgba(255, 245, 246, 1) 12%
+      );
+  }
 }
-
 
 /* Карты Городов */
 
@@ -59,39 +70,38 @@
 
   margin-bottom: 20px;
 
-    @media screen and(min-width: 768px) {
-      width: 220px;
-      height: 544px;
-      margin-right: 20px;
-      margin-bottom: 81px;
-    }
+  @media screen and(min-width: 768px) {
+    width: 220px;
+    height: 544px;
+    margin-right: 20px;
+    margin-bottom: 81px;
+  }
 
-      @media screen and(min-width: 1280px) {
-      width: 330px;
-      height: 572px;
-      margin-bottom: 86px;
-      margin-right: 31px;
-    }
+  @media screen and(min-width: 1280px) {
+    width: 330px;
+    height: 572px;
+    margin-bottom: 86px;
+    margin-right: 31px;
+  }
 }
 
 .contacts-city:last-child {
   margin-right: 0;
-} 
-
+}
 
 .contacts-list {
   padding: 43px 20px;
 
-    @media screen and(min-width: 768px) {
-      padding: 50px 32px;
-    }
+  @media screen and(min-width: 768px) {
+    padding: 50px 32px;
+  }
 
-      @media screen and(min-width: 1280px) {
-      padding-top: 51px;
-      padding-bottom: 62px;
-      padding-right: 44px;
-      padding-left: 44px;
-   }
+  @media screen and(min-width: 1280px) {
+    padding-top: 51px;
+    padding-bottom: 62px;
+    padding-right: 44px;
+    padding-left: 44px;
+  }
 }
 
 .contacts-list-item-name {
@@ -100,7 +110,7 @@
   font-family: DM Sans;
   font-style: normal;
   @include fw_fs_line-height-calc(500, 12, 22);
-  
+
   display: block;
   align-items: center;
   text-align: center;
@@ -112,18 +122,17 @@
 
   color: #ffffff;
 
-    @media screen and(min-width: 768px) {
-      width: 73px;
-      @include fw_fs_line-height-calc(500, 16, 30);
-      margin-bottom: 30px;
-    }
+  @media screen and(min-width: 768px) {
+    width: 73px;
+    @include fw_fs_line-height-calc(500, 16, 30);
+    margin-bottom: 30px;
+  }
 
-      @media screen and(min-width: 1280px) {
-      width: 73px;
-      margin-bottom: 32px;
-    }
+  @media screen and(min-width: 1280px) {
+    width: 73px;
+    margin-bottom: 32px;
+  }
 }
-
 
 .contacts-list-item-titel {
   height: 22px;
@@ -131,23 +140,23 @@
   font-family: DM Sans;
   font-style: normal;
   @include fw_fs_line-height-calc(500, 12, 22);
-  
+
   margin-bottom: 10px;
   letter-spacing: 0.04em;
 
   color: #000000;
 
-    @media screen and(min-width: 768px) {
-      height: 26px;
-      @include fw_fs_line-height-calc(500, 14, 26);
-       margin-bottom: 14px;
+  @media screen and(min-width: 768px) {
+    height: 26px;
+    @include fw_fs_line-height-calc(500, 14, 26);
+    margin-bottom: 14px;
   }
 
-    @media screen and(min-width: 1280px) {
-      height: 30px;
-      @include fw_fs_line-height-calc(500, 16, 30);
-       margin-bottom: 10px;
-    }
+  @media screen and(min-width: 1280px) {
+    height: 30px;
+    @include fw_fs_line-height-calc(500, 16, 30);
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-list-item-text {
@@ -158,16 +167,16 @@
 
   color: #907e82;
 
-    @media screen and(min-width: 768px) {
-      width: 145px;
-      @include fw_fs_line-height-calc(500, 14, 23);
-}
-
-    @media screen and(min-width: 1280px) {
-      width: 243px;
-      @include fw_fs_line-height-calc(500, 16, 29);
-    }
+  @media screen and(min-width: 768px) {
+    width: 145px;
+    @include fw_fs_line-height-calc(500, 14, 23);
   }
+
+  @media screen and(min-width: 1280px) {
+    width: 243px;
+    @include fw_fs_line-height-calc(500, 16, 29);
+  }
+}
 
 .contacts-list-item::after {
   content: '';
@@ -179,19 +188,18 @@
   margin-bottom: 25px;
   border: 1px solid #e1e1e1;
 
-     @media screen and(min-width: 768px) {
-       width: 157px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+  @media screen and(min-width: 768px) {
+    width: 157px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-     @media screen and(min-width: 1280px) {
-      width: 234px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+  @media screen and(min-width: 1280px) {
+    width: 234px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
-
 
 .contacts-list-item-week {
   width: 100%;
@@ -203,15 +211,15 @@
 
   color: #000000;
 
-     @media screen and(min-width: 768px) {
-      height: 26px;
-      @include fw_fs_line-height-calc(500, 14, 26);
+  @media screen and(min-width: 768px) {
+    height: 26px;
+    @include fw_fs_line-height-calc(500, 14, 26);
   }
 
-     @media screen and(min-width: 1280px) {
-      height: 30px;
-      @include fw_fs_line-height-calc(500, 16, 30);
-      letter-spacing: 0.04em;
+  @media screen and(min-width: 1280px) {
+    height: 30px;
+    @include fw_fs_line-height-calc(500, 16, 30);
+    letter-spacing: 0.04em;
   }
 }
 
@@ -225,30 +233,29 @@
 
   color: #ffa5ba;
 
-     @media screen and(min-width: 768px) {  
-     height: 23px;
-     @include fw_fs_line-height-calc(500, 14, 26);
+  @media screen and(min-width: 768px) {
+    height: 23px;
+    @include fw_fs_line-height-calc(500, 14, 26);
   }
 
-    @media screen and(min-width: 1280px) {
-      height: 30px;
-      @include fw_fs_line-height-calc(500, 16, 30);
-      letter-spacing: 0.04em;
-    }
+  @media screen and(min-width: 1280px) {
+    height: 30px;
+    @include fw_fs_line-height-calc(500, 16, 30);
+    letter-spacing: 0.04em;
+  }
 }
 
 .item-time {
   margin-bottom: 10px;
 
-    @media screen and(min-width: 768px) {
-      margin-bottom: 16px;
-}
+  @media screen and(min-width: 768px) {
+    margin-bottom: 16px;
+  }
 
-      @media screen and(min-width: 1280px) {
-      margin-bottom: 15px;
+  @media screen and(min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
-}
-
 
 .nav-list-item-link {
   width: 179px;
@@ -284,61 +291,60 @@
 
 /* 1- кнопка */
 
- .contacts-btn {
-   min-width: 161px;
-   height: 44px;
-   padding: 12px 20px;
+.contacts-btn {
+  min-width: 161px;
+  height: 44px;
+  padding: 12px 20px;
 
-   font-family: DM Sans;
-   font-style: normal;
-   @include fw_fs_line-height-calc(700, 16, 21);
+  font-family: DM Sans;
+  font-style: normal;
+  @include fw_fs_line-height-calc(700, 16, 21);
 
-   border: 0;
-   cursor: pointer;
-   margin-bottom: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
 
-   display: flex;
-   align-items: center;
-   text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-   color: #d41443;
-   background: #ffffff;
-
-   border-radius: 22px;
-
-   transition: color 250ms linear;
-   transition: background-color 250ms linear;
-
-     @media screen and(min-width: 768px) {
-       margin-right: 15px;
-       margin-bottom: 0;
-     }
-
- }
-
- .contacts-btn::after {
-   content: '';
-   width: 8px;
-   height: 10px;
-   margin-left: 10px;
-   background-image: url('../images/icon/cont-vector.svg');
-
-   background-size: contain;
- }
-
-.contacts-btn:hover ,
-.contacts-btn:focus  {
+  // color: #d41443;
+  // background: #ffffff;
   color: #ffffff;
   background-color: #d41342;
-  background-image: url('../images/icon/Vector.svg');
+
+  border-radius: 22px;
+
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+
+  @media screen and(min-width: 768px) {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
 }
 
-.contacts-btn:hover::after ,
-.contacts-btn:focus::after {
-
+.contacts-btn::after {
+  content: '';
+  width: 8px;
+  height: 10px;
+  margin-left: 10px;
   background-image: url('../images/icon/Vector.svg');
+
+  background-size: contain;
 }
 
+// .contacts-btn:hover,
+// .contacts-btn:focus {
+//   color: #ffffff;
+//   background-color: #d41342;
+//   background-image: url('../images/icon/Vector.svg');
+// }
+
+// .contacts-btn:hover::after,
+// .contacts-btn:focus::after {
+//   background-image: url('../images/icon/Vector.svg');
+// }
 
 /* 2- кнопка */
 
@@ -366,10 +372,15 @@
   transition: color 250ms linear;
   transition: background-color 250ms linear;
 
-    @media screen and(min-width: 768px) {
+  @media screen and(min-width: 768px) {
     margin-right: 0;
     margin-bottom: 0;
   }
+}
+
+.franchise:hover,
+.franchise:focus {
+  background: #ecebeb;
 }
 
 .franchise::after {
@@ -383,10 +394,9 @@
   background-image: url('../images/icon/cont-vector.svg');
 }
 
-
-.franchise:hover::after,
-.franchise:focus::after {
-  color: #ffffff;
-   background-color: #d41342;
-   background-image: url('../images/icon/Vector.svg');
-}
+// .franchise:hover::after,
+// .franchise:focus::after {
+//   color: #ffffff;
+//   background-color: #d41342;
+//   background-image: url('../images/icon/Vector.svg');
+// }
