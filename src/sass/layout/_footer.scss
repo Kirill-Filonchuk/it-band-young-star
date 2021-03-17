@@ -33,13 +33,13 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 46px;
-        margin-right: -28px;
-    
     }
     .footer-item{
         display: flex;
         text-decoration: none;
-        
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
         
     }
   
@@ -56,7 +56,6 @@ footer .link{
     text-align: center;
     border-radius: 50%;
    background-color: #FEA5BB;
-    margin-right: 28px;
 }
 .footer-link:hover,
 .footer-link:focus{
@@ -107,12 +106,16 @@ line-height: 1.834;
 text-align: right;
 color:#D41443;
 }
+
 .footer-company{
 width: 100%;
+max-width:100%;
 display: flex;
 justify-content: center;
 border-top: 1px solid #E1E1E1;
+background-color: #FFF5F6; 
 }
+
 .footer-company-text{
 width: 145px;
 margin-top: 22px;

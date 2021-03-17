@@ -26,17 +26,17 @@
   background-position: center;
 
 
-  background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(255,245,246,1) 6%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(255,245,246,1) 6%), no-repeat;
   padding-bottom: 113px;
   
   @media screen and(min-width: 768px) {
     padding-bottom: 158px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,245,246,1) 10%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,245,246,1) 10%), no-repeat;
   }
 
   @media screen and(min-width: 1280px) {
     padding-bottom: 165px;
-    background: url('../images/bg.png'),  center, linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(255,245,246,1) 12%);
+    background: url('../images/bg.png'), no-repeat, center, linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(255,245,246,1) 12%);
     }
 }
 
