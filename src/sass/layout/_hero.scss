@@ -172,8 +172,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    // transform: translate(-50%, -50%);
-    // z-index: 1000;
+  
     @media screen and (min-width: 768px) {
       right: 4%;
     }
@@ -196,7 +195,6 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
    .container_hero  {
         padding-right: 24px;
-        // было 34пс позиционирование кружков - 10пс ......................
         padding-left: 34px;
         padding-left: 34px;
         padding-top: 83px;
@@ -207,10 +205,9 @@
 @media screen and (min-width: 1280px) {
     .container_hero  {
 
-        // padding-right: 34px;
         padding-left: 36px;
         padding-right: 0;
-        //было 70 позиционирование кружков - 18пс ........................
+       
         padding-top: 83px;
             max-width: 1120px;
             height: 665px;
@@ -237,8 +234,7 @@
     flex-direction: column;
     z-index: 3;
      }
-  
-// Валентина
+ 
 
 .coutn-wraper {
   padding-right: 10px;
@@ -248,9 +244,7 @@
 }
 
 .first-count {
-  // border: dashed red;
-
-  display: flex;
+   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
@@ -280,9 +274,7 @@
     }
 }
 .second-count {
-  // border: dashed red;
-
-
+  
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
