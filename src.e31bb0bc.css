@@ -1213,6 +1213,32 @@ button {
     background-image: url(/d-milk@2x.038b17c7.png);
   }
 }
+.about-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .about-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-container {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
 .about-label {
   font-family: Titan One;
   font-weight: 400;
@@ -1268,32 +1294,6 @@ button {
 @media screen and (min-width: 768px) {
   .about-for-flex {
     display: flex;
-  }
-}
-
-.about-container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .about-container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-container {
-    width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .about-container {
-    width: 1280px;
-    padding-left: 115px;
-    padding-right: 115px;
   }
 }
 
