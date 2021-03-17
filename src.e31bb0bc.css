@@ -2066,7 +2066,7 @@ button {
 }
 
 /* 1- кнопка */
-.contacts-btn {
+.contacts-btn_l {
   min-width: 161px;
   height: 44px;
   padding: 12px 20px;
@@ -2081,20 +2081,20 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #d41443;
-  background: #ffffff;
+  color: #ffffff;
+  background: #d41443;
   border-radius: 22px;
   transition: color 250ms linear;
   transition: background-color 250ms linear;
 }
 @media screen and (min-width: 768px) {
-  .contacts-btn {
+  .contacts-btn_l {
     margin-right: 15px;
     margin-bottom: 0;
   }
 }
 
-.contacts-btn::after {
+.contacts-btn_l::after {
   content: "";
   width: 8px;
   height: 10px;
@@ -2103,15 +2103,15 @@ button {
   background-size: contain;
 }
 
-.contacts-btn:hover,
-.contacts-btn:focus {
+.contacts-btn_l:hover,
+.contacts-btn_l:focus {
   color: #ffffff;
   background-color: #d41342;
   background-image: url("/Vector.76acf997.svg");
 }
 
-.contacts-btn:hover::after,
-.contacts-btn:focus::after {
+.contacts-btn_l:hover::after,
+.contacts-btn_l:focus::after {
   background-image: url("/Vector.76acf997.svg");
 }
 
@@ -2159,6 +2159,55 @@ button {
 .franchise:focus::after {
   color: #ffffff;
   background-color: #d41342;
+  background-image: url("/Vector.76acf997.svg");
+}
+
+.contacts-btn_f {
+  min-width: 161px;
+  height: 44px;
+  padding: 12px 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: #d41443;
+  border-radius: 22px;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+}
+@media screen and (min-width: 768px) {
+  .contacts-btn_f {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-btn_f::after {
+  content: "";
+  width: 8px;
+  height: 10px;
+  margin-left: 10px;
+  background-image: url("/cont-vector.4e7b06ad.svg");
+  background-size: contain;
+}
+
+.contacts-btn_f:hover,
+.contacts-btn_f:focus {
+  color: #D41443;
+  background-color: #ECEBEB;
+  background-image: url("/Vector.76acf997.svg");
+}
+
+.contacts-btn_f:hover::after,
+.contacts-btn_f:focus::after {
   background-image: url("/Vector.76acf997.svg");
 }
 
